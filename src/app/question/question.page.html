@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">Question</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+ <div class="iom-padding">
+
+  <ion-text color="primary">
+    <p>Please fill up if you have any question and we will be in touch with you soon</p>
+  </ion-text>
+  
+  <ion-item>
+    <ion-label position="floating">Name</ion-label>
+    <ion-input type="text" [(ngModel)]="post.name"  required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" placeholder="your@gmail.com" [(ngModel)]="post.email" required></ion-input>
+  </ion-item>
+
+  
+
+  <ion-item>
+    <ion-label position="floating">Question</ion-label>
+    <ion-input type="text" placeholder="Your Question" [(ngModel)]="post.message" required></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" color="primary" (click)="createPost(post)">
+    <ion-icon slot="start" name="send"></ion-icon>
+    Send
+  </ion-button>
+
+ </div>
+
+</ion-content>

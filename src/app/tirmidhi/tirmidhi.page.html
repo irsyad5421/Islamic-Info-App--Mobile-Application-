@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">Jamì at-Tirmidhi</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="biodata"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <div id="container">
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/witr']">
+          <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+         The Book on Al-Witr
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/purif']" >
+           <ion-icon ion-icon name="arrow-forward-outline"></ion-icon>
+          The Book on Purification
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/salat']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+          The Book on Salat (Prayer)
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/friday']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+          The Book on the Day of Friday
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/eids']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+          The Book on the Two Eids
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+</div>
+  </ion-content>

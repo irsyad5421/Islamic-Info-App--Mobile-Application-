@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">Hadith</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <ion-button color="success" [routerLink]="['/family']" size="default" expand="block" fill="solid">
+        <ion-icon slot="start" ion-icon name="book-outline"></ion-icon>
+        <ion-toolbar color="success" class="ion-text-center">
+         Sahih al-Bukhari
+        </ion-toolbar>
+      </ion-button>
+    </ion-col>
+
+
+    <ion-col size="12">
+      <ion-button color="success" [routerLink]="['/muslim']" size="default" expand="block" fill="solid">
+        <ion-icon slot="end" ion-icon name="book-outline"></ion-icon>
+        <ion-toolbar color="success" class="ion-text-center">
+         Sahih Muslim
+        </ion-toolbar>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-button color="success" [routerLink]="['/daud']" size="default" expand="block" fill="solid">
+        <ion-icon slot="start" ion-icon name="book-outline"></ion-icon>
+        <ion-toolbar color="success" class="ion-text-center">
+        Sunan Abi Daud
+        </ion-toolbar>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-button color="success" [routerLink]="['/tirmidhi']" size="default" expand="block" fill="solid">
+        <ion-icon slot="end" ion-icon name="book-outline"></ion-icon>
+        <ion-toolbar color="success" class="ion-text-center">
+        Jami' at-Tirmidhi
+        </ion-toolbar>
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-button color="success" [routerLink]="['/majah']" size="default" expand="block" fill="solid">
+        <ion-icon slot="start" ion-icon name="book-outline"></ion-icon>
+        <ion-toolbar color="success" class="ion-text-center">
+        Sunan Ibn Majah
+        </ion-toolbar>
+      </ion-button>
+    </ion-col>
+
+    
+  
+</ion-row>
+</ion-grid>
+</ion-content>
+
+

@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">Life Hadith</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" >
+  <div id="container">
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/food']">
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+          Food
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/drink']" >
+           <ion-icon ion-icon name="arrow-forward-outline"></ion-icon>
+          Drink
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/manner']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+          Good Manner
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/fast']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+          Fasting
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    
+    
+</div>
+  </ion-content>

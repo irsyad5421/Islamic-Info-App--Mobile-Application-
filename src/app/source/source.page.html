@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">Source</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+      
+ 
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <p class="ion-text-center">
+          <img [routerLink]="['/family']" src="assets/bukh.jpg" width=100%>
+        </p>
+      </ion-col>
+      <ion-col size="6">
+        <p class="ion-text-center">
+          <img [routerLink]="['/muslim']" src="assets/muslim.png" width=100%>
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <p class="ion-text-center">
+          <img [routerLink]="['/daud']" src="assets/daud.jpg" width=100%>
+        </p>
+      </ion-col>
+      <ion-col size="6">
+        <p class="ion-text-center">
+          <img [routerLink]="['/tirmidhi']" src="assets/tirmidhi.png" width=100%>
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <p class="ion-text-center">
+          <img [routerLink]="['/majah']" src="assets/majah.jpg" width=100%>
+        </p>
+      </ion-col>
+      <ion-col size="6">
+        <p class="ion-text-center">
+         
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

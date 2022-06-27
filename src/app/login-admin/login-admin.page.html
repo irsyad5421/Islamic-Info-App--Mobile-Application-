@@ -1,0 +1,53 @@
+<ion-header >
+  <ion-toolbar color="success">
+   
+    
+    
+
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/login']" >
+        <ion-icon  slot="icon-only" name="log-out-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <br><br><br>
+  <p class="ion-text-center">
+  
+  </p>
+  <h4 class="ion-text-center">ADMIN</h4>
+  <ion-grid fixed class="bgtransparent">
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-item>
+          <ion-icon class="iconic" name="person-outline" slot="start"></ion-icon>
+          <ion-label class="input" position="floating">Username</ion-label>
+          <ion-input class="font" type="email" [(ngModel)]="admin.email" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-item>
+          <ion-label class="input" position="floating">Password</ion-label>
+          <ion-icon class="iconic" name="lock-closed-outline" slot="start"></ion-icon>
+          <ion-input class="font" type="password" [(ngModel)]="admin.password" required></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-text-center">
+      <ion-col size="12">
+        <ion-button (click)="logIn(admin)" color="success" expand="block" shape="round">
+          <ion-icon class="icon" name="log-in-outline" slot="end"></ion-icon>
+          LOGIN
+        </ion-button>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+</ion-content>

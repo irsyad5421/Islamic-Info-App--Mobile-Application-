@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title class="ion-text-center">Sunan Abi Daud</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="biodata"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <div id="container">
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/alsalat']">
+          <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+        Prayer(Kitab Al-Salat)
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/voluntary']" >
+           <ion-icon ion-icon name="arrow-forward-outline"></ion-icon>
+           Prayer(Kitab As-Salat)  Voluntary Prayers
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/pur']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+           Purification (Kitab Al-Taharah)
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/rain']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+           The Book of Prayer for Rain(Kitab al-Istisqa')
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="dark">
+      <ion-card-header>
+       
+      </ion-card-header>
+      <ion-card-content>
+        
+        <ion-button color="success" [routerLink]="['/zakat']" >
+           <ion-icon  ion-icon name="arrow-forward-outline"></ion-icon>
+           Zakat(Kitab al-zakat)
+         </ion-button>
+      </ion-card-content>
+    </ion-card>
+</div>
+  </ion-content>
